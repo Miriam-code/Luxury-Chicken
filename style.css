@@ -1,0 +1,1414 @@
+* {
+    margin: 0;
+}
+
+body { 
+    background-color: rgba(30, 30,30, 30);
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: bolder;
+    color: white;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/***********************************************NAV**********************************/
+
+nav {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(224,43,26); 
+    color: white;
+}
+.logo {
+    width: 15%;
+}
+
+ ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+}
+
+.vector {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 10%;
+}
+
+nav ul li {
+    list-style: none;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+display: none;
+}
+
+/******************************************FOOTER************************************************************/
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.titrefooter {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%; 
+    margin-top: 10%;
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2%;
+}
+
+.contact img {
+    object-fit:none;  
+}
+.contact p {
+    color: grey;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app img {
+    margin-right: 2%;
+    width: 90%;
+}
+.application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paiement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+.paiement p {
+    margin-bottom: 4%;
+}
+
+.reseaux {
+    margin-top: 2%;
+}
+
+.rsx {
+    gap: 5%;
+}
+
+.cardtitre {
+    color: white;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.cardtitre2 {
+    color: white;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.cardtitre3 {
+    color: white;
+    margin-left: 2%;
+    margin-top: 15%;
+    margin-bottom: 1%;
+}
+
+
+
+/****************************************PAGE ACCUEIL****************************************************/
+
+/*******************************cards*********************/
+
+.cardtitre {
+    color: white;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.card {
+    background-color: rgb(76, 76, 76);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    gap: 2%;
+    margin-bottom: 2%;
+    width: 20%;
+
+}
+    
+.card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 10px 10px 0px 0px;
+}
+
+.titreimg h2 {
+    font-family:'Montserrat';
+    margin-top: 5%;
+    font-size: 90%;
+}
+        
+.buttonimg button {
+    font-family:'Montserrat'; 
+    font-size: 20px ; 
+    background-color: rgba(224,43,26); 
+    color: wheat;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttonimg {
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+/*********************carroussel******************/
+
+.cards2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+    margin-left: 2%;
+    margin-bottom: 5%;
+  
+}
+
+.card2 {
+    background-color: rgb(76, 76, 76);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    width: 25%;
+    scroll-snap-align: start;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 30%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+
+}
+    
+.card2 img {
+
+width: 100%;
+object-fit: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 10px 10px 0px 0px;
+
+}
+
+.titreimg2 h2 {
+    margin-top: 5%;
+}
+
+.buttonimg2 {
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   padding-bottom: 5%;
+   padding-top: 5%;
+   width: 100%;
+}
+
+.buttonimg2 button {
+    font-family:'Montserrat'; 
+    background-color: rgba(224,43,26); 
+    color: wheat;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/*********************scroll***************/
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+   
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+
+/********************************************PAGE CATEGORIES *****************************************************/
+
+/***********************CARDS********************************/
+
+.cards3 {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+}
+
+.card3 {
+
+    background-color: rgb(76, 76, 76);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    width: 20%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    gap: 2%;
+
+}
+    
+.card3 img {
+
+width: 100%;
+object-fit: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 10px 10px 0px 0px;
+
+}
+
+.titreimg3 h2 {
+    font-size: 90%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.buttonimg3 {
+    
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 5%;
+   padding-top: 5%;
+   width: 100%;
+   margin-left: 10%;
+}
+
+.buttonimg3 button {
+    font-family:'Montserrat'; 
+    font-size: 20px ; 
+    background-color: rgba(224,43,26); 
+    color: wheat;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttonimg3 p {
+    margin-right: 15%;
+}
+
+.cat select {
+    display: none;
+}
+
+/********************************************* PANIER ***************************************************************/
+
+.panier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-right: 2%;
+    font-size: 24px;
+}
+
+.produits {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.produit {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    margin-bottom: 10%;
+}
+
+.produit .gauche img {
+    width: 100%;
+    border-radius: 2%;
+    object-fit: cover;
+}
+
+.produit .gauche {
+    width: 50%;
+}
+
+.produit .droite {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.droite .prix {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.droite h2 {
+    font-size: 24px;
+}
+.priximg img {
+    margin-right: 50%;   
+}
+
+.priximg {
+    display: flex;
+    flex-direction: row;
+}
+
+.total {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(89,89,89,23%);
+    padding: 2%;
+    border-radius: 2%;
+
+}
+
+.total .prod {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5%;
+}
+
+.prodliv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5%;
+}
+
+.total h2 {
+    margin-bottom: 5%;
+}
+
+.total .livraison hr {
+    margin-bottom: 5%;
+}
+
+.total button {
+    margin-left: 25%;
+    width: 50%;
+    font-family:'Montserrat'; 
+    font-size: 20px ; 
+    background-color: rgba(224,43,26); 
+    color: wheat;
+    border: none;
+    border-radius: 5px;
+
+}
+
+/*********************************************PAGE PRODUITS***********************************************************/
+
+.infoprod {
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.prodimg {
+    width: 40%;
+}
+
+.prodimg img {
+  width: 100%;
+}
+
+.descriptprod {
+    width: 60%;
+}
+
+.descriptprod .descript p {
+    color:rgba(163, 163, 163);
+    margin-top: 2%;
+    
+}
+
+.infoprod .livraison {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 5%;
+}
+
+.infoprod .livraison  img {
+    width: 10%;
+    margin-right: 2%;
+}
+
+.livraison .camion {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttonimg4 button {
+
+    font-size: 20px ; 
+    background-color: rgba(224,43,26); 
+    border: none;
+    color: white;
+    padding: 1%;
+    border-radius: 15px;
+
+}
+
+.buttonimg4 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.buttonimg4 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/****************************************POP UP PANIER*********************************/
+.popup_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_container.active {
+    display: flex;
+}
+
+.popup {
+    height: 430px;
+    width: 800px;
+    background-color: rgba(224,43,26);
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    animation: animationA 1s ease-in-out .5s backwards;
+}
+
+.pop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.image_container {
+    position: relative;
+    height: 360px;
+    width: 360px;
+}
+
+.image_container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.description_heading {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ds p {
+    font-size: 25px;
+    margin-bottom: 5%;
+   
+}
+
+.buttonimg6 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.buttonimg6 button {
+    font-size: 20px ; 
+    background-color: rgba(30, 30,30, 30); 
+    border: none;
+    color: white;
+    padding: 1%;
+    border-radius: 8px;
+}
+
+@keyframes animationA {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/****************************************************CONNEXION*******************************************************/
+
+.connexion {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;  
+}
+
+.connexion h2 {
+    margin-bottom: 3%;
+}
+
+.connexion .imgreseaux img {
+    margin-right: 5%;
+}
+
+.connexion .imgreseaux {
+    width: 40%;
+    font-size: 15px;
+    margin-bottom: 2%;
+}
+
+.fb {
+
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: rgba(37, 74,165);
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 4%;
+
+    
+}
+
+.apple {
+
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 4%;
+
+}
+
+.google {
+
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:transparent;
+    border: solid 1px white;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.comptee {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+.comptee a {
+    text-decoration: none;
+    color: red;
+    margin-left: 10px;
+}
+
+.input {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.input input {
+    background-color: transparent;
+    border: solid 1px white;
+    margin-bottom: 3%;
+    padding: 5%;
+    width: 100%;
+}
+
+/*****************FOCUS**************************/
+
+/*Only on focus and valid*/
+input:valid:focus{ color: lime; }
+
+/*Only on focus and invalid*/
+input:invalid:focus{ color: red; }
+
+
+/***************bUTTON************************/
+
+.buttonimg5 button {
+  
+    background-color: rgba(224,43,26); 
+    border: none;
+    color: white;
+    padding: 5%;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.buttonimg5 {
+
+    margin-top: 2%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+/***************************************** PANIER VIDE********************************************/
+
+.paniervide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paniervide img {
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+.paniervide p {
+    margin-bottom: 2%;
+    font-size: 22px;
+    padding: 1%;
+    color: rgb(255, 255, 255, 50%);
+    text-align: center;
+}
+
+
+.paniervide button {
+    padding: 1%;
+    border-radius: 4%;
+    border: none;
+    color: black;
+}
+
+.paniervide button a {
+    color: black;
+}
+
+.paniervide h2 {
+    margin-bottom: 2%;
+    font-size: 35px;
+}
+
+
+
+/*******************************************INSCRIPTION***************************************************************/
+
+.connexion .input .cookies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.connexion .input .cookies p {
+    margin-left: 5%;
+    color: rgb(122, 122, 122);
+}
+
+/********************************************PAIEMENT****************************************************************/
+
+.input label {
+    margin-bottom: 5%;
+    font-size: 22px;
+}
+
+.input .expiration {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 110%;
+}
+
+.input select {
+
+    background-color: transparent;
+    border: solid 1px white;
+    margin-bottom: 3%;
+    padding: 5%;
+    width: 45%;
+    color: rgb(122, 122, 122);
+
+} 
+
+select {
+    background-color: transparent;
+    border: solid 1px white;
+    margin-bottom: 3%;
+    padding: 5%;
+    width: 100%;
+    color: rgb(122, 122, 122);
+}
+
+.selectliv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    margin-bottom: 2%;
+}
+
+.selectliv label {
+    margin-bottom: 5%;
+    font-size: 22px;
+}
+
+.checkbox {
+
+    width: 55%;
+
+}
+
+.connexion .checkbox .cookies {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+    gap: 5%;
+    width: 100%
+}
+
+
+.connexion .checkbox .cookies p {
+    color: rgb(122, 122, 122);
+    font-size: 20px;
+}
+
+
+/********************************MON PROFIL**************************************/
+/**************************************PROFIL********************************************/
+
+.compte {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.compte  .profilimg img {
+    width: 100%;
+    object-fit: cover;
+}
+.compte .profilimg {
+    width: 10%;
+    margin-right: 2%;
+}
+
+
+/***************************liens*******************/
+
+.liens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.liens a {
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px white;
+    padding-bottom: 1%;
+}
+
+
+/************PROFIL**************/
+
+.profil {
+    margin-bottom: 1%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardprofil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cardimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+.cardimg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/******************/
+
+.paragraphe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxprofil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+}
+
+/***************************TABS**********************************/
+
+.wrapper {
+    width: 100%;
+	min-height: 100vh;
+	box-sizing: border-box;
+	line-height: 1.5;
+	margin: 0 auto;
+
+}
+
+.box {
+	display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.box label {
+    color: white;
+    border-bottom: solid 2px white;
+	font-weight: 700;
+	text-align: center;
+	order: 1;
+	display: block;
+	padding: 2%;
+	margin-right: 4px;
+	cursor: pointer;
+}
+
+.box .content {
+	display: none;
+	padding: 5%;
+	background: rgba(30, 30,30, 30);
+    color: white;
+	order: 99;
+	flex-grow: 1;
+	width: 100%;
+    font-size: 90%;
+}
+
+.box .content .paramètre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: solid 2px rgb(122, 122, 122);
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+}
+
+.box .content .paramètre img {
+    margin-left: 30%;
+}
+
+
+.box .content .titreprofil {
+    color:rgba(224,43,26);
+    margin-bottom: 5%;
+}
+
+.box input[type="radio"] {
+	display: none;
+}
+
+.box input[type="radio"]:checked+label {
+    border-bottom: solid 2px rgba(224,43,26);
+}
+.box input[type="radio"]:checked+label+.content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+
+}
+
+/* Mobile */
+@media (max-width:767px) {
+
+    .compte {
+        margin-top: 15%;
+    }
+
+    .titreimg3 h2 {
+        font-size: 90%; 
+    }
+
+    .cat select {
+        display: block;
+        background-color: transparent;
+        border: none;
+        width: 40%;
+        color: rgb(122, 122, 122);
+        margin-left: 2%;
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-top: 10%;
+    }
+
+    .connexion {
+        margin-top: 15%;
+    }
+
+    .input label {
+        font-size: 18px;
+    }
+
+    .selectliv label {
+        font-size: 18px;
+    }
+
+    .infoprod {
+        margin-top: 12%;
+    }
+
+    .cardtitre {
+        margin-top: 13%;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .buttonimg4 button {
+        font-size: 15px;
+    }
+    .infoprod .livraison {
+        margin-top: 0;
+    }
+
+    .descript p {
+        font-size: 70%;
+    }
+
+
+    .total {
+        width: 90%;
+    }
+
+    .produits {
+        width: 90%; 
+    }
+    .panier {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .totalprod {
+        display: none;
+    }
+
+    .prodliv {
+        display: none;
+    }
+
+    .panier {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .cards2{ 
+        flex-basis: 40%;
+    }
+    .titreimg2 h2 {
+        font-size: 90%;
+    }
+    .foot {
+        flex-direction: column;
+    }
+    .contact {
+        justify-content: center;
+    }
+    .rsx {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card3 {
+        width: 40%;
+    }
+    .cards3 {
+        justify-content: space-around;
+        text-align: center;
+    }
+ 
+}
+/* Ipad Mini to ipad */
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    .compte {
+        margin-top: 15%;
+    }
+
+    .titreimg3 h2 {
+        font-size: 90%; 
+    }
+
+    .cat select {
+        display: block;
+        background-color: transparent;
+        border: none;
+        width: 40%;
+        color: rgb(122, 122, 122);
+        margin-left: 2%;
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-top: 10%;
+    }
+
+    .connexion {
+        margin-top: 15%;
+    }
+
+    .infoprod {
+        margin-top: 10%;
+    }
+    .cardtitre {
+        margin-top: 10%;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .buttonimg4 button {
+        font-size: 15px;
+    }
+
+    .infoprod .livraison {
+        margin-top: 0;
+    }
+
+    .descript p {
+        font-size: 70%;
+    }
+
+    .total {
+        width: 90%;
+    }
+    .produits {
+        width: 90%;
+    }.panier {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .prodimg {
+        width: 40%;
+    }
+    
+    .totalprod {
+        display: none;
+    }
+
+    .prodliv {
+        display: none;
+    }
+
+    .card {
+        width: 40%;
+    }
+    .cards2{ 
+        flex-basis: 30%;
+    }
+
+    .titreimg2 h2 {
+        font-size: 20px;
+    }
+
+    .foot {
+        flex-direction: column;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+    .rsx {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .card3 {
+        width: 40%;
+        justify-content: space-around;
+    }
+    .cards3 {
+        justify-content: space-around;
+    }
+
+}
+/* Ordi to UP */
+@media screen and (min-width: 992px) {
+
+    .titreimg3 h2 {
+        font-size: 20px; 
+    }
+
+    .prodimg {
+        width: 40%;
+    }
+
+    .card {
+        width: 23%;
+    }
+    
+    .cards2{ 
+        flex-basis: 20%;
+    }
+
+    .titreimg2 h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media(max-width: 991px){
+
+    nav {
+        padding-bottom: 0;
+        position: fixed;
+        top: -20px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        gap: 5%;
+        width: 60%;
+    }
+
+    .vector {
+        width: 30%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        background: rgb(27, 27, 27,0.95);
+        top: 9%;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    
+    #check:checked ~ ul{
+    left: 0;
+    }
+    
+}
