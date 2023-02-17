@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Paiement</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <h1><a href="index.html">Luxury Chicken</a></h1>
+            </div>
+
+            <div class="reverse">
+
+                <input type="checkbox" id="check">
+               <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                </label>
+
+              <ul>
+                <li><a href="categorie.html">Poêles</a></li>
+                <li><a href="categorie.html">Verres</a></li>
+                <li><a href="categorie.html">Accessoires</a></li>
+                <li><a href="categorie.html">Couverts</a></li>
+                <li><a href="categorie.html">Assiettes</a></li>
+                <li><a href="categorie.html">Moules et plaques</a></li>
+              </ul>
+
+              <div class="vector">
+                <a href="panier.html"><img src="img/icons8-buy-26.png" alt="panier"></a>
+                <a href="connexion.html"><img src="img/user.png" alt="user"></a>
+              </div>
+            
+            </div>
+       
+        </nav>
+        
+    </header>
+ <!---------------------------NAV-------------------------------->
+
+ <div class="connexion">
+
+    <h2>Ajouter une méthode de paiement</h2>
+    <h2> Nom du compte</h2>
+
+    <div class="input">
+    
+        <input type="text" placeholder="Nom de la carte" pattern="[A-Za-z]{3,10}" required>
+        <input type="text" placeholder="Numéro de la carte"pattern="[0-9]{16}" required>
+    
+       </div>
+       
+       <div class="input">
+
+           <label for="date d'expiration">Date d'expiration</label>
+    
+            <div class="expiration">
+    
+                <select name="month" required >
+                    <option value="jan">1</option>
+                    <option value="feb">2</option>
+                    <option value="mar">3</option>
+                    <option value="avr">4</option>
+                    <option value="mai">5</option>
+                    <option value="jui">6</option>
+                    <option value="juil">7</option>
+                    <option value="août">8</option>
+                    <option value="sep">9</option>
+                    <option value="oct">10</option>
+                    <option value="nov">11</option>
+                    <option value="dec">12</option>
+                </select>
+        
+                <select name="years" required>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2026">2027</option>
+                </select>  
+
+                 
+            </div>
+            <input type="text" placeholder="Code sécurité (CVV)" pattern="[0-9]{3}" required>   
+       </div>
+    
+       <div class="checkbox">   
+            <h2>Enregistrer pour mes prochains achats</h2>
+            
+            <div class="cookies">
+                <div class="cookies">
+                    <input type="checkbox">
+                    <p>Oui</p> 
+                </div>
+                <div class="cookies">
+                    <input type="checkbox">
+                    <p>Non</p>
+                </div>
+    
+            </div>
+       </div>
+
+       <div class="buttonimg5">
+        <button><a href="commandevalid.html">Valider la commande</a></button>
+       </div>
+
+ </div>
+
+
+  <!-----------------------------FOOTER--------------------------->
+
+  <footer>
+
+    <div class="foot">
+
+        <div class="contacts">
+
+            <div class="titrefooter">
+                <h3>Contact information</h3>
+            </div>
+
+            <div class="contact">
+                <img src="img/icons8-visit-24.png" alt="localisation">
+                <p>3891 Ranchview Dr.<br>
+                     Richardson, California 62639<br>
+                     USA</p>
+            </div>
+
+            <div class="contact">
+             <img src="img/icons8-phone-30.png" alt="phone">
+             <p>(603) 555-0123</p>
+            </div>
+
+            <div class="contact">
+                <img src="img/icons8-envelope-30.png" alt="enveloppe">
+                <p>georgia.young@example.com</p>
+            </div>
+
+        </div>
+
+        <div class="application">
+
+            <div class="titrefooter">
+                <h3>Découvrez l'application</h3>
+            </div>
+
+            <div class="app">
+                <div>
+                    <img src="img/google play.png" alt="googleplay">
+                </div>
+                <div>
+                    <img src="img/apple.png" alt="apple">
+                </div>
+            </div>
+
+            <div class="paiement">
+                <p>PAIEMENT SECURISÉ</p>
+                <img src="img/paiement.png" alt="paiement">
+            </div>
+
+            <div class="swipe">
+                <a href="#nav">
+                    <img src="img/swipe.png" alt="swipe">
+                </a>
+    
+            </div>
+
+
+        </div>
+
+        <div class="reseaux">
+
+            <div class="titrefooter">
+                <h3>Rejoignez-nous</h3>
+            </div>
+
+            <div class="rsx">
+                <img src="img/facebook.png" alt="fb">
+                <img src="img/twitter.png" alt="twitter">
+                <img src="img/insta.png" alt="insta">
+            </div>
+
+        </div>
+
+    </div> 
+
+</footer>
+
+</body>
+</html>
